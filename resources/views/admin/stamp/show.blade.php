@@ -66,7 +66,7 @@
                                     <div class="col-md-8">
                                         <br>
                                         <img src="{{asset('barcode.jpeg')}}" width="60%" alt="">
-                                        <table class="" style="width: 100%;margin-top:3px;">
+                                        <table class="" style="width: 100%;margin-top:3px;font-size:19px;">
                                             <tbody>
                                                 <tr>
                                                     <td><strong>ID :</strong></td>
@@ -82,10 +82,10 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <table class="" style="width: 100%;margin-top:20px;">
+                                        <table class="" style="width: 100%;margin-top:20px;font-size:19px;">
                                             <tbody>
                                                 <tr>
-                                                    <td style="width:35%;">Description :</td>
+                                                    <td >Description :</td>
                                                     <td>{{$stamp->description->name}}</td>
                                                 </tr>
                                                 <tr>
@@ -127,7 +127,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 text-right">
                                         <iframe src="{{$url}}" height="155" width="155" style="border:white;"></iframe>
                                         <br>
                                         <strong>Scan For Online Verification</strong>
@@ -135,7 +135,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12" style="border:solid 2px;">
-                                        {!! $stamp->notes !!}
+                                        <p>نوٹ :یہ ٹرانزیکشن اجرا سے سات دنوں کے لئے قابل استعمال ہے۔ ای اسٹامپ کی تصدیق بذریعہ ویب سائٹ ، کیوآر کوڈ یا ایس ایم ایس سے کی جا سکتی ہے۔</p>
+                                        <p>Type "eStamp<16 digit eStamp Number>" send to 8100</p>
                                     </div>
                                 </div>
                                 @if($stamp->image)
